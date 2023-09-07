@@ -1,0 +1,123 @@
+ 
+ *
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ .container{
+    width: 90%;
+    margin: 5%;
+    padding: 2%;
+    height: auto;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 34px 34px 36px 0px rgba(0,0,0,0.51);
+-webkit-box-shadow: 34px 34px 36px 0px rgba(0,0,0,0.51);
+-moz-box-shadow: 34px 34px 36px 0px rgba(0,0,0,0.51);
+ }
+ .inputContainer{
+     margin: 2%;
+     padding: 5%;
+     width:40%;
+     height: auto;
+     background-color: aliceblue;
+ }
+ .displayContainer{
+    margin: 2%;
+    padding: 5%;
+    width:55%;
+    height: auto;
+    background-color: aliceblue;
+}
+#Item{
+   padding:2%;
+   font-size: 20px;
+   width: 100%;
+   
+   border: 0;
+   outline: 0;
+   display: block;
+   font-weight: bold;
+   box-shadow: 0px 0px 5px grey;
+   
+   height: 10vh;
+}
+.to-do-box{
+    margin-top: 2%;
+    list-style: none;
+    
+  
+}
+.to-do-box li{
+    position: relative;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+    color: black;
+    padding:2%;
+    font-size: larger;
+    align-items: center;
+    text-align: justify;
+    margin: 2%;
+    
+}
+
+ .fa-remove{
+    position: absolute;
+    right: 2%;
+   
+}
+.fa-pen-to-square{
+    position: absolute;
+    right: 10%; 
+}
+.fa-remove:hover{
+    position: absolute;
+    right: 2%;
+    background-color: rgb(133, 229, 133);
+    padding: 1%;
+    
+   
+}
+.fa-pen-to-square:hover{
+    position: absolute;
+   padding: 1%;
+    background-color: rgb(133, 229, 133);
+}
+.head{
+    margin: 4%;
+   text-align: center;
+   font-family:Georgia;
+   font-weight: bolder;
+   color: rgb(59, 0, 65);
+}
+ input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid rgb(247, 238, 121);
+    padding: 8.5px ;
+    width:90px;
+    border-radius: 25px;
+    transition: 0.25px ;
+    background-color: rgb(244, 230, 43);
+    cursor: pointer;
+}
+.done{
+    background-color: aquamarine;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+@media only screen and (max-width: 768px ){
+    .container{
+        display: block;
+    }
+    .inputContainer,.displayContainer{
+        width: auto;
+    }
+    }
